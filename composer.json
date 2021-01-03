@@ -1,9 +1,9 @@
 {
     "name": "vjik/uuid",
     "type": "library",
-    "description": "_____",
+    "description": "UUID Helper",
     "keywords": [
-        "_____"
+        "uuid"
     ],
     "license": "BSD-3-Clause",
     "support": {

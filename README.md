@@ -1,22 +1,35 @@
-# _____
+# UUID Helper
 
-[![Latest Stable Version](https://poser.pugx.org/vjik/_____/v/stable.png)](https://packagist.org/packages/vjik/_____)
-[![Total Downloads](https://poser.pugx.org/vjik/_____/downloads.png)](https://packagist.org/packages/vjik/_____)
-[![Build status](https://github.com/vjik/_____/workflows/build/badge.svg)](https://github.com/vjik/_____/actions?query=workflow%3Abuild)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fvjik%2F_____%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/vjik/_____/master)
-[![static analysis](https://github.com/vjik/_____/workflows/static%20analysis/badge.svg)](https://github.com/vjik/_____/actions?query=workflow%3A%22static+analysis%22)
+[![Latest Stable Version](https://poser.pugx.org/vjik/uuid/v/stable.png)](https://packagist.org/packages/vjik/uuid)
+[![Total Downloads](https://poser.pugx.org/vjik/uuid/downloads.png)](https://packagist.org/packages/vjik/uuid)
+[![Build status](https://github.com/vjik/uuid/workflows/build/badge.svg)](https://github.com/vjik/uuid/actions?query=workflow%3Abuild)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fvjik%2Fuuid%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/vjik/uuid/master)
+[![static analysis](https://github.com/vjik/uuid/workflows/static%20analysis/badge.svg)](https://github.com/vjik/uuid/actions?query=workflow%3A%22static+analysis%22)
 
-The package ...
+The package provides `UuidHelper` that has static methods to work with UUID.
+Based on library [ramsey/uuid](https://uuid.ramsey.dev/).
 
 ## Installation
 
 The package could be installed with [composer](https://getcomposer.org/download/):
 
 ```shell
-composer require vjik/_____ --prefer-dist
+composer require vjik/uuid --prefer-dist
 ```
 
-## General usage
+## `UuidHelper` usage
+
+`UuidHelper` methods are static so usage is like the following:
+
+```php
+$bytes = \Vjik\Uuid\UuidHelper::convertStringToBytes('1f2d3897-a226-4eec-bd2c-d0145ef25df9');
+```
+
+Overall the helper has the following methods:
+
+- generateTimestampFirstCombUuid4
+- convertStringToBytes
+- convertBytesToString
 
 ## Testing
 
@@ -47,5 +60,5 @@ The code is statically analyzed with [Psalm](https://psalm.dev/). To run static 
 
 ## License
 
-The _____ is free software. It is released under the terms of the BSD License.
+The UUID Helper is free software. It is released under the terms of the BSD License.
 Please see [`LICENSE`](./LICENSE.md) for more information.
